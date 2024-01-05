@@ -3,3 +3,8 @@ os: linux
 files:
   - source: /
     destination: /tmp/website
+hooks:
+  ApplicationStart:
+    - location: codedeployscripts/server_reload
+      timeout: 300
+      runas: root
