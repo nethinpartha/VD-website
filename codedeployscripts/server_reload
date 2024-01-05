@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Deployment has been started ...."
-sudo rsync -avzh /tmp/website/   /var/www/html/
+sudo rsync -avzh /tmp/website/  /var/www/html/
 sudo service apache2 reload
 sudo chmod 777 /var/www/html/resumes
 echo " Deployment has been completed..."
